@@ -1,16 +1,20 @@
-# React + Vite
+# 🎮 Pokémon Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic React memory card game built using Vite and Tailwind CSS. The application integrates the PokéAPI to fetch random character images, tracking current scores and checking user memory capacity across randomized layouts.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+Play the live version here: **https://dev-sandbox-5v8mp1oq3-knight-templer.vercel.app**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Features
+* **Dynamic API Integration:** Fetches random Pokémon datasets dynamically.
+* **State Management:** Tracks current streak, high score, and clicked arrays.
+* **Layout Scrambling:** Shuffles card positions every time a selection is made.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Local Installation
+To run this project locally, clone the main sandbox repository and run:
+```bash
+cd pokemon-memory-game
+npm install
+npm run dev
