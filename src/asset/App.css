@@ -1,0 +1,142 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #e1e1e6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* --- Header Layout --- */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #29292e;
+}
+
+.title-container h1 {
+  font-size: 2.5rem;
+  color: #f4de23;
+  text-shadow: 0 4px 10px rgba(244, 222, 35, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.title-container p {
+  color: #a8a8b3;
+  font-size: 1rem;
+}
+
+/* Scoreboard Styling */
+.score-board {
+  display: flex;
+  gap: 1rem;
+}
+
+.score-box {
+  background-color: #202024;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #29292e;
+  text-align: center;
+  min-width: 120px;
+}
+
+.score-box span {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #8d8d99;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.score-box strong {
+  font-size: 1.75rem;
+  color: #04d361;
+}
+
+.score-box:last-child strong {
+  color: #ff79c6;
+}
+
+/* --- Loading Screen --- */
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f4de23;
+  margin-top: 5rem;
+  font-weight: bold;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* --- Card Grid Layout --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #202024;
+  border: 2px solid #29292e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Hover Animation effects */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #f4de23;
+  box-shadow: 0 8px 16px rgba(244, 222, 35, 0.15);
+  background-color: #29292e;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.3));
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #e1e1e6;
+  text-align: center;
+}
